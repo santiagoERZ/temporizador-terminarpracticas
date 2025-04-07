@@ -12,7 +12,15 @@ body {
 .div-temporizador {
     padding: 20px;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
+}
+
+.div-temporizador > h1{
+    font-size: 30px;
+}
+
+.div-temporizador > p{
+    font-size: 22px;
 }
 
 footer {
@@ -22,4 +30,18 @@ footer {
     position: absolute;
     bottom: 0;
     padding: 0px 0px;
+}
+
+@media (max-width: 650px) {
+    body {
+        height: 70vh;
+    }
+
+    .div-temporizador > h1{
+        font-size: 25px;
+    }
+    
+    .div-temporizador > p{
+        font-size: 20px;
+    }
 }

@@ -21,5 +21,5 @@ function actualizarTemporizador() {
     document.getElementById("temporizador").innerText = `${meses} meses, ${semanas} semanas, ${diasTotales % 30} días, ${horas} horas, ${minutos} minutos, ${segundos} segundos.`
 }
 
-setInterval(actualizarTemporizador, 1000);
+setInterval(actualizarTemporizador, 900);
 actualizarTemporizador();
