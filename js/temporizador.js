@@ -15,11 +15,10 @@ function actualizarTemporizador() {
     const horasTotales = Math.floor(minutosTotales / 60);
     const horas = horasTotales % 24;
     const diasTotales = Math.floor(horasTotales / 24)
-    const semanas = Math.floor(diasTotales / 7);
     const meses = Math.floor(diasTotales / 30);
 
-    document.getElementById("temporizador").innerText = `${meses} meses, ${semanas} semanas, ${diasTotales % 30} días, ${horas} horas, ${minutos} minutos, ${segundos} segundos.`
+    document.getElementById("temporizador").innerText = `${meses} meses ${diasTotales % 30} días ${horas} horas ${minutos} minutos ${segundos} segundos`
 }
 
-setInterval(actualizarTemporizador, 900);
+setInterval(actualizarTemporizador, 1000);
 actualizarTemporizador();
