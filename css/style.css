@@ -10,7 +10,10 @@ body {
 }
 
 .div-temporizador {
-    padding: 20px;
+    background-color: white;
+    color: rgb(120, 32, 202);
+    border-radius: 30px;
+    padding: 50px;
     text-align: center;
     font-size: 18px;
 }
